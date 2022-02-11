@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class DragonCave {
     public static void main(String[] args) {
-
+    try{
         System.out.println("You are in a land full of dragons. In front of you,");
         System.out.println("you see two caves. In one cave, the dragon is friendly");
         System.out.println("and will share his treasure with you. The other dragon");
@@ -26,5 +26,9 @@ public class DragonCave {
             System.out.println("The dragon gives you some of his treasure! SWEET!");
         }
         else System.out.println("Please try and again and either choose 1 or 2");
+    } catch (Exception e){
+        System.out.println("Input Mismatch error: Please enter a number");
+    }
+
     }
 }
