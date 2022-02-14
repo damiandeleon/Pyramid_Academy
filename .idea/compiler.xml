@@ -6,12 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="DragonCaveProject" />
         <module name="GuessTheNumber" />
-        <module name="GuessTheNumberProject" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="GuessTheNumberProject" target="11" />
+      <module name="DragonCaveProject" target="11" />
+      <module name="GuessTheNumber" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>

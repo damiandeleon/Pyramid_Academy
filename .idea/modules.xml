@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DragonCaveProject/DragonCaveProject.iml" filepath="$PROJECT_DIR$/DragonCaveProject/DragonCaveProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GuessTheNumberProject/GuessTheNumber.iml" filepath="$PROJECT_DIR$/GuessTheNumberProject/GuessTheNumber.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Pyramid_Academy.iml" filepath="$PROJECT_DIR$/.idea/Pyramid_Academy.iml" />
+    </modules>
+  </component>
+</project>
