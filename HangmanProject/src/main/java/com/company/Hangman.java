@@ -6,35 +6,60 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Hangman {
+
+
+    public static String generateWord() {
+        String[] wordList = {"cat", "dog", "horse", "steal", "bite", "hotel", "pocket", "highland", "pig"};
+        Random rand = new Random();
+        String correctWord = wordList[rand.nextInt(wordList.length)];
+        return correctWord;
+    }
+
+
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int lives = 3;
+        int lives = 4;
+        ArrayList<Character> usedLetters = new ArrayList<Character>();
         boolean gameOver = false;
         boolean gameWon = false;
-//        String[] wordList = {"cat", "dog", "bee", "horse", "sea", "steal", "bit", "hot", "patter", "hi"};
-        String[] wordList = {"cat", "dog", "bee", "sea", "bit", "hot", "hi", "pig", "lot", "wow"};
-        ArrayList<Character> usedLetters = new ArrayList<Character>();
-        Random rand = new Random();
+////        String[] wordList = {"cat", "dog", "bee", "horse", "sea", "steal", "bit", "hot", "patter", "hi"};
+//        String[] wordList = {"cat", "dog", "bee", "sea", "bit", "hot", "hi", "pig", "lot", "wow"};
+//        ArrayList<Character> usedLetters = new ArrayList<Character>();
+//        Random rand = new Random();
+//
+//        String correctWord = wordList[rand.nextInt(10)];
 
-        String correctWord = wordList[rand.nextInt(10)];
-
+        String correctWord = generateWord();
         char[] letters = new char[correctWord.length()];
         for (int i = 0; i < letters.length; i++) {
             letters[i] = '_';
         }
 
-        System.out.println(correctWord);
-
-
 //        while(gameOver == false){
         while(lives > 0){
-            System.out.println("Used Letters: " + usedLetters);
-            if(lives == 3){
+            if(lives == 4){
                 System.out.println(
                         "HANGMAN" +
                                 "\n+---+" +
 
                                 "\n    |" +
+
+                                "\n    |" +
+
+                                "\n    |" +
+
+                                "\n   ===" +
+                                "\nMissed letters:" +
+                                "\n" + Arrays.toString(letters)
+
+                );
+            } else if(lives == 3){
+                System.out.println(
+                        "HANGMAN" +
+                                "\n+---+" +
+
+                                "\n O  |" +
 
                                 "\n    |" +
 
@@ -52,22 +77,6 @@ public class Hangman {
 
                                 "\n O  |" +
 
-                                "\n    |" +
-
-                                "\n    |" +
-
-                                "\n   ===" +
-                                "\nMissed letters:" +
-                                "\n" + Arrays.toString(letters)
-
-                );
-            } else if(lives == 1){
-                System.out.println(
-                        "HANGMAN" +
-                                "\n+---+" +
-
-                                "\n O  |" +
-
                                 "\n |  |" +
 
                                 "\n    |" +
@@ -76,7 +85,7 @@ public class Hangman {
                                 "\nMissed letters:" +
                                 "\n" + Arrays.toString(letters)
                 );
-            }  else if(lives == 0){
+            }  else if(lives == 1){
                 System.out.println(
                         "HANGMAN" +
                                 "\n+---+" +
@@ -146,15 +155,15 @@ public class Hangman {
                 } else {
                     gameOver = false;
                     usedLetters.clear();
-                    lives = 3;
+                    lives = 4;
 //**************************************************************
-                    rand = new Random();
-                    correctWord = wordList[rand.nextInt(10)];
+//                    rand = new Random();
+//                    correctWord = wordList[rand.nextInt(10)];
+                    correctWord = generateWord();
                     letters = new char[correctWord.length()];
                     for (int i = 0; i < letters.length; i++) {
                         letters[i] = '_';
                     }
-                    System.out.println(correctWord);
                     //****************************************************************
                 }
 
@@ -171,15 +180,15 @@ public class Hangman {
                 } else {
                     gameOver = false;
                     usedLetters.clear();
-                    lives = 3;
+                    lives = 4;
 //**************************************************************
-                    rand = new Random();
-                    correctWord = wordList[rand.nextInt(10)];
+//                    rand = new Random();
+//                    correctWord = wordList[rand.nextInt(10)];
+                    correctWord = generateWord();
                     letters = new char[correctWord.length()];
                     for (int i = 0; i < letters.length; i++) {
                         letters[i] = '_';
                     }
-                    System.out.println(correctWord);
                     //****************************************************************
                 }
 
@@ -192,4 +201,6 @@ public class Hangman {
 
         System.out.println("Exiting Game");
     }
+
+
 }
