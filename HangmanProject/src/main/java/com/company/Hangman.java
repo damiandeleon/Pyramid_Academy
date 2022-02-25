@@ -28,6 +28,7 @@ public class Hangman {
 
 //        while(gameOver == false){
         while(lives > 0){
+            System.out.println("Used Letters: " + usedLetters);
             if(lives == 3){
                 System.out.println(
                         "HANGMAN" +
@@ -103,14 +104,16 @@ public class Hangman {
             for(int i = 0; i < correctWord.length(); i++){
                 char character = correctWord.charAt(i);
 
-                usedLetters.add(letter);
+
                 if(character == letter){
                     letters[i] = character;
                     correctGuess = true;
                 }
 
             }
-
+            if (usedLetters.contains(letter)){
+                System.out.println("You already guessed that letter.  Try again");
+            }
             if (!correctGuess){
                     lives = lives -1;
                 }
@@ -125,7 +128,7 @@ public class Hangman {
                     gameOver = true;
                 }
             }
-
+            usedLetters.add(letter);
             System.out.println("-----------------------------");
 
 
@@ -142,6 +145,7 @@ public class Hangman {
                     break;
                 } else {
                     gameOver = false;
+                    usedLetters.clear();
                     lives = 3;
 //**************************************************************
                     rand = new Random();
@@ -166,6 +170,7 @@ public class Hangman {
 
                 } else {
                     gameOver = false;
+                    usedLetters.clear();
                     lives = 3;
 //**************************************************************
                     rand = new Random();
@@ -177,7 +182,7 @@ public class Hangman {
                     System.out.println(correctWord);
                     //****************************************************************
                 }
-                
+
             }
 
         }
