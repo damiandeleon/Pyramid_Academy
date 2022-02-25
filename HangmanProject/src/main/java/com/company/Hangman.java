@@ -1,5 +1,6 @@
 package com.company;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
@@ -8,7 +9,11 @@ public class Hangman {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int lives = 3;
-        String[] wordList = {"cat", "dog", "bee", "horse", "sea", "steal", "bit", "hot", "patter", "hi"};
+        boolean gameOver = false;
+        boolean gameWon = false;
+//        String[] wordList = {"cat", "dog", "bee", "horse", "sea", "steal", "bit", "hot", "patter", "hi"};
+        String[] wordList = {"cat", "dog", "bee", "sea", "bit", "hot", "hi", "pig", "lot", "wow"};
+        ArrayList<Character> usedLetters = new ArrayList<Character>();
         Random rand = new Random();
 
         String correctWord = wordList[rand.nextInt(10)];
@@ -21,7 +26,7 @@ public class Hangman {
         System.out.println(correctWord);
 
 
-
+//        while(gameOver == false){
         while(lives > 0){
             if(lives == 3){
                 System.out.println(
@@ -91,23 +96,95 @@ public class Hangman {
             System.out.println("Guess a letter.");
             String guess = scanner.nextLine();
             char letter = guess.charAt(0);
-            System.out.println("-----------------------------");
+
+
             boolean correctGuess = false;
 
             for(int i = 0; i < correctWord.length(); i++){
                 char character = correctWord.charAt(i);
+
+                usedLetters.add(letter);
                 if(character == letter){
                     letters[i] = character;
                     correctGuess = true;
                 }
 
-
             }
+
             if (!correctGuess){
                     lives = lives -1;
                 }
 
+
+
+            for (int i = 0; i < letters.length; i++) {
+                if(letters[i] == '_'){
+                    gameOver = false;
+                }
+                if (letters[i] != '_'){
+                    gameOver = true;
+                }
+            }
+
+            System.out.println("-----------------------------");
+
+
+
+            if (gameOver){
+                System.out.println("Yes!  The secret word is: " + correctWord + ". You have won!");
+
+                System.out.println("Do you want to play again? (y/n)");
+                String playAgain = scanner.nextLine();
+
+                if(playAgain.equals("n")){
+                    gameOver  = true;
+                    lives = 0;
+                    break;
+                } else {
+                    gameOver = false;
+                    lives = 3;
+//**************************************************************
+                    rand = new Random();
+                    correctWord = wordList[rand.nextInt(10)];
+                    letters = new char[correctWord.length()];
+                    for (int i = 0; i < letters.length; i++) {
+                        letters[i] = '_';
+                    }
+                    System.out.println(correctWord);
+                    //****************************************************************
+                }
+
+
+            } else if (lives == 0){
+                System.out.println("You lost.  The word was: " + correctWord);
+                System.out.println("Do you want to play again? (y/n)");
+                String playAgain = scanner.nextLine();
+
+                if(playAgain.equals("n")){
+                    gameOver  = true;
+                    lives = 0;
+
+                } else {
+                    gameOver = false;
+                    lives = 3;
+//**************************************************************
+                    rand = new Random();
+                    correctWord = wordList[rand.nextInt(10)];
+                    letters = new char[correctWord.length()];
+                    for (int i = 0; i < letters.length; i++) {
+                        letters[i] = '_';
+                    }
+                    System.out.println(correctWord);
+                    //****************************************************************
+                }
+                
+            }
+
         }
+
+
+
+
         System.out.println("Exiting Game");
     }
 }
