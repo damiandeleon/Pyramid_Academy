@@ -5,19 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0f523d2-06f1-477d-911a-5eac444b2b53" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/Play.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Humanoid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Humanoid.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Land.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Land.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Map.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Terrain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Terrain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/Humanoid.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/Humanoid.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/Land.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/Land.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/Map$Row.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/Map$Row.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/Map.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/Map.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/Terrain.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/Terrain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Goblin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Goblin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Play.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Play.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/Goblin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/Goblin.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,6 +160,14 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/company/Goblin.java</url>
+          <line>16</line>
+          <properties class="com.company.Goblin" method="moveGoblin">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
