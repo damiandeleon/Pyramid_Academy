@@ -21,9 +21,8 @@ public class MapTest {
     @Test
     public void addEntity() {
         Map map = new Map(2);
-        ArrayList<Map.Row> gameboard = new ArrayList<>();
         ArrayList<Humanoid> entities = new ArrayList<>();
-        ArrayList<Terrain> terrains = new ArrayList<>();
+
         Humanoid gob = new Humanoid(1,1);
         Humanoid man = new Humanoid(2,1);
         entities.add(gob);
@@ -34,5 +33,15 @@ public class MapTest {
 
     @Test
     public void addTerrain() {
+        Map map = new Map(2);
+        ArrayList<Terrain> terrains = new ArrayList<>();
+
+        Terrain land = new Terrain(0,0);
+        Terrain land2 = new Terrain(2,1);
+        terrains.add(land);
+        terrains.add(land2);
+        assertEquals(0,terrains.indexOf(land));
+        assertEquals(1, terrains.indexOf(land2));
+
     }
 }

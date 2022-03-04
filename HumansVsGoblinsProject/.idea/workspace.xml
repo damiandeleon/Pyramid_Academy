@@ -5,20 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0f523d2-06f1-477d-911a-5eac444b2b53" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/company/HumanoidTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/company/MapTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/company/GoblinTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Goblin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Goblin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Land.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Land.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Map.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Play.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Play.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/Goblin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/Goblin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/Land.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/Land.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/Map.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/Map.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/company/Play.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/Play.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/company/MapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/company/MapTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/company/MapTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/company/MapTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +58,39 @@
       <recent name="com.company" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MapTest.addEntity">
+  <component name="RunManager" selected="JUnit.GoblinTest.shouldMoveGoblinYCoordToDynamicllyMoveCloserToHuman">
+    <configuration name="GoblinTest.shouldMoveGoblinXCoordDownToDynamicllyMoveCloserToHuman" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HumansVsGoblins" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="com.company.GoblinTest" />
+      <option name="METHOD_NAME" value="shouldMoveGoblinXCoordDownToDynamicllyMoveCloserToHuman" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GoblinTest.shouldMoveGoblinYCoordToDynamicllyMoveCloserToHuman" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HumansVsGoblins" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="com.company.GoblinTest" />
+      <option name="METHOD_NAME" value="shouldMoveGoblinYCoordToDynamicllyMoveCloserToHuman" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HumanoidTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HumansVsGoblins" />
       <extension name="coverage">
@@ -80,54 +102,6 @@
       <option name="PACKAGE_NAME" value="com.company" />
       <option name="MAIN_CLASS_NAME" value="com.company.HumanoidTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HumanoidTest.shouldMoveEastByIncreasingYBy1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="HumansVsGoblins" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.company" />
-      <option name="MAIN_CLASS_NAME" value="com.company.HumanoidTest" />
-      <option name="METHOD_NAME" value="shouldMoveEastByIncreasingYBy1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HumanoidTest.shouldMoveSouthByIncreasingXBy1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="HumansVsGoblins" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.company" />
-      <option name="MAIN_CLASS_NAME" value="com.company.HumanoidTest" />
-      <option name="METHOD_NAME" value="shouldMoveSouthByIncreasingXBy1" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HumanoidTest.shouldMoveWestByDecreasingYBy1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="HumansVsGoblins" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.company" />
-      <option name="MAIN_CLASS_NAME" value="com.company.HumanoidTest" />
-      <option name="METHOD_NAME" value="shouldMoveWestByDecreasingYBy1" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -148,13 +122,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MapTest.addTerrain" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HumansVsGoblins" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="com.company.MapTest" />
+      <option name="METHOD_NAME" value="addTerrain" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GoblinTest.shouldMoveGoblinYCoordToDynamicllyMoveCloserToHuman" />
+        <item itemvalue="JUnit.GoblinTest.shouldMoveGoblinXCoordDownToDynamicllyMoveCloserToHuman" />
+        <item itemvalue="JUnit.MapTest.addTerrain" />
         <item itemvalue="JUnit.MapTest.addEntity" />
         <item itemvalue="JUnit.HumanoidTest" />
-        <item itemvalue="JUnit.HumanoidTest.shouldMoveWestByDecreasingYBy1" />
-        <item itemvalue="JUnit.HumanoidTest.shouldMoveEastByIncreasingYBy1" />
-        <item itemvalue="JUnit.HumanoidTest.shouldMoveSouthByIncreasingXBy1" />
       </list>
     </recent_temporary>
   </component>
@@ -190,6 +180,14 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/com/company/GoblinTest.java</url>
+          <line>19</line>
+          <properties class="com.company.GoblinTest" method="shouldMoveGoblinXCoordDownToDynamicllyMoveCloserToHuman">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
