@@ -54,21 +54,4 @@ public class Map {
      public Terrain getTerrain(int x, int y){
           return gameboard.get(x).gameRow.get(y);
      }
-
-     public static void main(String[] args) {
-          var x = new Map(5);
-
-          var gobby = new Goblin(0,0);
-          x.addEntity(gobby);
-          gobby.moveSouth();
-
-          gobby.moveSouth();
-
-//          var humin = new Human(0,9);
-//          x.addEntity(humin);
-
-
-          x.updateState();
-          System.out.println(x);
-     }
 }

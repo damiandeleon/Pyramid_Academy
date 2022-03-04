@@ -5,10 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b0f523d2-06f1-477d-911a-5eac444b2b53" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/company/HumanoidTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/company/MapTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Goblin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Goblin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Land.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Land.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Map.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/company/Play.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/Play.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/company/Goblin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/Goblin.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/Land.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/Land.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/Map.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/Map.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/Play.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/company/Play.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +29,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -38,15 +50,26 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="junit.framework.TestCase" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="Goblin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.Goblin" />
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+      <recent name="junit.framework.TestCase" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.company" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.MapTest.addEntity">
+    <configuration name="HumanoidTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HumansVsGoblins" />
       <extension name="coverage">
         <pattern>
@@ -54,12 +77,14 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="com.company.HumanoidTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Human" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.Human" />
+    <configuration name="HumanoidTest.shouldMoveEastByIncreasingYBy1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HumansVsGoblins" />
       <extension name="coverage">
         <pattern>
@@ -67,12 +92,15 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="com.company.HumanoidTest" />
+      <option name="METHOD_NAME" value="shouldMoveEastByIncreasingYBy1" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Land" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.Land" />
+    <configuration name="HumanoidTest.shouldMoveSouthByIncreasingXBy1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HumansVsGoblins" />
       <extension name="coverage">
         <pattern>
@@ -80,12 +108,15 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="com.company.HumanoidTest" />
+      <option name="METHOD_NAME" value="shouldMoveSouthByIncreasingXBy1" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
+    <configuration name="HumanoidTest.shouldMoveWestByDecreasingYBy1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HumansVsGoblins" />
       <extension name="coverage">
         <pattern>
@@ -93,12 +124,15 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="com.company.HumanoidTest" />
+      <option name="METHOD_NAME" value="shouldMoveWestByDecreasingYBy1" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Map" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.Map" />
+    <configuration name="MapTest.addEntity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HumansVsGoblins" />
       <extension name="coverage">
         <pattern>
@@ -106,17 +140,21 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="com.company.MapTest" />
+      <option name="METHOD_NAME" value="addEntity" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Map" />
-        <item itemvalue="Application.Human" />
-        <item itemvalue="Application.Goblin" />
-        <item itemvalue="Application.Land" />
+        <item itemvalue="JUnit.MapTest.addEntity" />
+        <item itemvalue="JUnit.HumanoidTest" />
+        <item itemvalue="JUnit.HumanoidTest.shouldMoveWestByDecreasingYBy1" />
+        <item itemvalue="JUnit.HumanoidTest.shouldMoveEastByIncreasingYBy1" />
+        <item itemvalue="JUnit.HumanoidTest.shouldMoveSouthByIncreasingXBy1" />
       </list>
     </recent_temporary>
   </component>
@@ -151,23 +189,7 @@
           <properties class="com.company.Humanoid" method="moveNorth">
             <option name="EMULATED" value="true" />
           </properties>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/company/Humanoid.java</url>
-          <line>48</line>
-          <properties class="com.company.Humanoid" method="moveWest">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/com/company/Goblin.java</url>
-          <line>16</line>
-          <properties class="com.company.Goblin" method="moveGoblin">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="23" />
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

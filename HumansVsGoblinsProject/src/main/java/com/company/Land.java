@@ -6,9 +6,4 @@ public class Land extends Terrain{
         super(x,y);
         this.setState("⛰");
     }
-
-
-    public static void main(String[] args) {
-//        System.out.println(new Land());
-    }
 }
