@@ -1,8 +1,10 @@
 package com.company;
 
 public class Terrain {
-    private int x;
-    private int y;
+    public int x;
+    public int y;
+//    private int x;
+//    private int y;
     private String state;
 
     public Terrain(int x, int y){
