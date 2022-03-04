@@ -58,7 +58,22 @@
       <recent name="com.company" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GoblinTest.shouldMoveGoblinYCoordToDynamicllyMoveCloserToHuman">
+  <component name="RunManager" selected="JUnit.MapTest">
+    <configuration name="GoblinTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HumansVsGoblins" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="com.company.GoblinTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GoblinTest.shouldMoveGoblinXCoordDownToDynamicllyMoveCloserToHuman" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HumansVsGoblins" />
       <extension name="coverage">
@@ -106,7 +121,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MapTest.addEntity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="HumansVsGoblins" />
       <extension name="coverage">
         <pattern>
@@ -116,35 +131,18 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.company" />
       <option name="MAIN_CLASS_NAME" value="com.company.MapTest" />
-      <option name="METHOD_NAME" value="addEntity" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MapTest.addTerrain" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="HumansVsGoblins" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.company" />
-      <option name="MAIN_CLASS_NAME" value="com.company.MapTest" />
-      <option name="METHOD_NAME" value="addTerrain" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MapTest" />
+        <item itemvalue="JUnit.HumanoidTest" />
+        <item itemvalue="JUnit.GoblinTest" />
         <item itemvalue="JUnit.GoblinTest.shouldMoveGoblinYCoordToDynamicllyMoveCloserToHuman" />
         <item itemvalue="JUnit.GoblinTest.shouldMoveGoblinXCoordDownToDynamicllyMoveCloserToHuman" />
-        <item itemvalue="JUnit.MapTest.addTerrain" />
-        <item itemvalue="JUnit.MapTest.addEntity" />
-        <item itemvalue="JUnit.HumanoidTest" />
       </list>
     </recent_temporary>
   </component>
