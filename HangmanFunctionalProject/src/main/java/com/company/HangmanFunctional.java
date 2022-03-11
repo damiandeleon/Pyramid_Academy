@@ -132,7 +132,7 @@ public class HangmanFunctional {
 
             System.out.println("\nGuess a letter, " + playerName + ".");
             String guess = scanner.nextLine();
-            char letter = guess.charAt(0);
+            char guessedLetter = guess.charAt(0);
 
 
             boolean correctGuess = false;
@@ -140,18 +140,15 @@ public class HangmanFunctional {
 
 //       ************* Update with map, filter, or reduce *******************
 
+
             for(int i = 0; i < correctWord.length(); i++){
-                char character = correctWord.charAt(i);
-
-
-
-                if(character == letter){
-                    letters[i] = character;
+                if(correctWord.charAt(i) == guessedLetter){
+                    letters[i] = correctWord.charAt(i);
                     correctGuess = true;
                 }
-
             }
-            if (usedLetters.contains(letter)){
+
+            if (usedLetters.contains(guessedLetter)){
                 System.out.println("You already guessed that letter.  Try again");
             }
             if (!correctGuess){
@@ -169,15 +166,15 @@ public class HangmanFunctional {
                     gameOver = true;
                 }
             }
-            usedLetters.add(letter);
+            usedLetters.add(guessedLetter);
             System.out.println("-----------------------------");
 
 
 
             if (gameOver){
-                System.out.println("\uD83D\uDCAF \uD83D\uDCAF \uD83D\uDCAF \uD83D\uDCAF \n Yes!  The secret word is: " + correctWord + ". \n You have won! \n \uD83D\uDCAF \uD83D\uDCAF \uD83D\uDCAF \uD83D\uDCAF");
                 score += 1;
-                System.out.println(playerName + ", your score is: " + score);
+                System.out.println("\uD83D\uDCAF \uD83D\uDCAF \uD83D\uDCAF \uD83D\uDCAF \n Yes!  The secret word is: " + correctWord + ". \n You have won! \n " + "Your score is: " + score + "\n \uD83D\uDCAF \uD83D\uDCAF \uD83D\uDCAF \uD83D\uDCAF");
+
                 // here's where you'll write to the file to record scores
 
                 System.out.println("Do you want to play again? (y/n)");
