@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+
+    <bean id="Student" class="com.company.Student">
+        <constructor-arg index="0" value="1119999"/>
+        <constructor-arg index="1" value="Damian DeLeon"/>
+        <constructor-arg index="2" ref="ph"/>
+        <constructor-arg index="3" ref="add"/>
+    </bean>
+
+    <bean id="ph" class="com.company.Phone">
+        <constructor-arg index="0" value="555-444-3333"/>
+    </bean>
+    <bean id="add" class="com.company.Address">
+        <constructor-arg index="0" value="Lubbock"/>
+        <constructor-arg index="1" value="Texas"/>
+        <constructor-arg index="2" value="USA"/>
+        <constructor-arg index="3" value="78727"/>
+    </bean>
+
+</beans>
