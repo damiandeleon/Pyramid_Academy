@@ -9,12 +9,12 @@ public class Address {
     public Address() {
     }
 
-    public Address(String city, String state, String country, String zipcode) {
-        this.city = city;
-        this.state = state;
-        this.country = country;
-        this.zipcode = zipcode;
-    }
+//    public Address(String city, String state, String country, String zipcode) {
+//        this.city = city;
+//        this.state = state;
+//        this.country = country;
+//        this.zipcode = zipcode;
+//    }
 
     public String getCity() {
         return city;
@@ -46,5 +46,15 @@ public class Address {
 
     public void setZipcode(String zipcode) {
         this.zipcode = zipcode;
+    }
+
+    @Override
+    public String toString() {
+        return "Address{" +
+                "city='" + city + '\'' +
+                ", state='" + state + '\'' +
+                ", country='" + country + '\'' +
+                ", zipcode='" + zipcode + '\'' +
+                '}';
     }
 }

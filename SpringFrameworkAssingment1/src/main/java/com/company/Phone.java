@@ -11,7 +11,18 @@ public class Phone {
         return mob;
     }
 
-    public void setMob(String mob) {
-        this.mob = mob;
+//    public void setMob(String mob) {
+//        this.mob = mob;
+//    }
+
+
+    public Phone() {
+    }
+
+    @Override
+    public String toString() {
+        return "Phone{" +
+                "mob='" + mob + '\'' +
+                '}';
     }
 }

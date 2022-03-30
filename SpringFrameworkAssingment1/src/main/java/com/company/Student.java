@@ -3,6 +3,7 @@ package com.company;
 import org.springframework.beans.factory.annotation.Value;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Student {
 
@@ -43,12 +44,12 @@ public class Student {
         this.add = add;
     }
 
-    public Student(int id, String name, List<Phone> ph, Address add) {
-        this.id = id;
-        this.name = name;
-        this.ph = ph;
-        this.add = add;
-    }
+//    public Student(int id, String name, List<Phone> ph, Address add) {
+//        this.id = id;
+//        this.name = name;
+//        this.ph = ph;
+//        this.add = add;
+//    }
 
     public Student() {
     }
