@@ -6,20 +6,33 @@
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
 
     <bean id="Student" class="com.company.Student">
-        <constructor-arg index="0" value="1119999"/>
-        <constructor-arg index="1" value="Damian DeLeon"/>
-        <constructor-arg index="2" ref="ph"/>
-        <constructor-arg index="3" ref="add"/>
+        <property name="id" value="12345"/>
+        <property name="name" value="Damian"/>
+        <property name="ph">
+            <list>
+                <value>555-444-3333</value>
+                <value>323-555-6666</value>
+                <value>888-2222-1324</value>
+            </list>
+        </property>
+        <property name="add" ref="add"/>
     </bean>
 
-    <bean id="ph" class="com.company.Phone">
-        <constructor-arg index="0" value="555-444-3333"/>
-    </bean>
     <bean id="add" class="com.company.Address">
-        <constructor-arg index="0" value="Lubbock"/>
-        <constructor-arg index="1" value="Texas"/>
-        <constructor-arg index="2" value="USA"/>
-        <constructor-arg index="3" value="78727"/>
+        <property name="city" value="Lubbock"/>
+        <property name="state" value="Texas"/>
+        <property name="country" value="USA"/>
+        <property name="zipcode" value="79402"/>
     </bean>
+
+<!--    <bean id="ph" class="com.company.Phone">-->
+<!--        <constructor-arg index="0" value="555-444-3333"/>-->
+<!--    </bean>-->
+<!--    <bean id="add" class="com.company.Address">-->
+<!--        <constructor-arg index="0" value="Lubbock"/>-->
+<!--        <constructor-arg index="1" value="Texas"/>-->
+<!--        <constructor-arg index="2" value="USA"/>-->
+<!--        <constructor-arg index="3" value="78727"/>-->
+<!--    </bean>-->
 
 </beans>
