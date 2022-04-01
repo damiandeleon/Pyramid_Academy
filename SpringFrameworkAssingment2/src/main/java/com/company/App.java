@@ -9,6 +9,7 @@ public class App {
 
         ApplicationContext context = new AnnotationConfigApplicationContext(AppConfiguation.class);
         Student student = (Student) context.getBean(Student.class);
+        System.out.println(student);
 
     }
 }
