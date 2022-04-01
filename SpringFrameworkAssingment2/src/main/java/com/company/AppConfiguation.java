@@ -15,9 +15,9 @@ public class AppConfiguation {
         Phone phone1 = getPhone();
         Phone phone2 = getPhone();
         Phone phone3 = getPhone();
-        phone1.setMob("555555555");
-        phone2.setMob("66666666");
-        phone3.setMob("99999999");
+        phone1.setMob("512-222-8888");
+        phone2.setMob("806-321-0000");
+        phone3.setMob("956-987-2213");
         phoneArrayList.add(phone1);
         phoneArrayList.add(phone2);
         phoneArrayList.add(phone3);
