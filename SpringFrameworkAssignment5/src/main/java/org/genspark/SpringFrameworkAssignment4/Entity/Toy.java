@@ -1,11 +1,20 @@
 package org.genspark.SpringFrameworkAssignment4.Entity;
 
+import javax.persistence.*;
 
+@Entity
+@Table(name = "Toy_Database")
 public class Toy {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int toyId;
     private String name;
     private String toyLine;
 
+
+    public Toy(){
+
+    }
     public Toy(int toyId, String name, String toyLine) {
         this.toyId = toyId;
         this.name = name;
